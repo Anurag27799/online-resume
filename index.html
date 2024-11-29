@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Html Function</title>
+    <style>
+        html {background-color: white;}
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 100px 250px;
+            gap: 30px;
+            border-radius: 10px;
+        }
+        .first {
+            grid-column: span 2;
+        }
+
+        .second {padding: 35px}
+
+
+        .second > p {text-align: center;
+                    font-size: 50px;
+                text-decoration: underline;}    
+        .card {
+            background-color: #DEA;
+            border-radius: 10px;
+        }
+        .first p {color: black;
+                    text-align: center;
+                    font-size: 30px;
+                }
+        .card p {color: black;
+                 }
+        button {background-color: orange;
+                border-radius: 5px;
+                border: ridge;
+            opacity: 0.5;}
+
+            span {font-weight: bold;
+            text-decoration: underline;}
+
+            .social {
+                display: flex;
+                justify-content: center;
+            }
+
+            img {height: 50px;
+            margin:2px;}
+
+
+            @media (max-width: 600px) {
+                .grid-container {
+                    display:block;
+                                    }
+            }
+    </style>
+</head>
+
+    <body>
+        <h1>Grid Html Function</h1>
+        <div class="grid-container">
+        <div class="first card"><p class="first-card-text">Hi! I'm CA Anurag Pal</p></div>
+        <div class="second card"><p class="second-card-text">Experience
+        </p></div>
+        <div class="card"><p>
+            <ul>
+                <li><span>KPMG Global Services</span>
+                    <ul>
+                        <li>Performed the audit of private equities, hedge  funds, mutual funds.</li>
+                        <li>Performed the preliminary analytical review of multiple clients and highlighted significant differences through variance analysis.</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span>BDO in India (MSKA & Associates)</span>
+                    <ul>
+                        <li>Performed variance analysis of listed banks, alternative investment funds.</li>
+                        <li>Performed the treasury audit of a listed Indian bank and a foreign bank.</li>
+                    </ul>
+                </li>
+            </ul>
+        </p></div>
+        
+        </div>
+    </body>
+    <footer>
+        <div class="social">
+            <a href="x.com/CA_Anurag_Pal"><img src="./twitter.png"></a>
+            <a href="www.linkedin.com/in/anuragpal27"><img src="./social.png"></a>
+        </div>
+    </footer>
+</html>
